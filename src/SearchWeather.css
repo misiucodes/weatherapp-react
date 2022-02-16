@@ -1,0 +1,50 @@
+header {
+  font-family: "Montserrat", sans-serif;
+  font-size: 22px;
+  font-weight: 400;
+  color: white;
+  letter-spacing: 1px;
+  margin-left: -130px;
+  margin-top: -119px;
+}
+
+h2 {
+  color: white;
+  margin: 144px auto 40px auto;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  font-size: 2.4vw;
+}
+.form-control {
+  display: block;
+  background-color: #fff;
+  border: 1px solid #ced4da;
+  min-height: 1;
+  padding: 0;
+  font-size: 1rem;
+  border-radius: 0.3rem;
+  line-height: 1.5;
+}
+
+input[type="search" i] {
+  width: 100%;
+  border-radius: 8px;
+  text-indent: 40px;
+  border: none;
+  margin-bottom: 12px;
+}
+
+input::placeholder {
+  font-size: 22px;
+  font-family: "Montserrat", sans-serif;
+  padding: 10px;
+}
+
+.icon-search {
+  font-size: 24px;
+  top: 25px;
+  right: -17px;
+  position: relative;
+  float: left;
+  color: darkslategrey;
+}

@@ -1,0 +1,60 @@
+.weather-info {
+  background-color: rgba(255, 255, 255, 0.4);
+  padding: 20px;
+  border-radius: 8px;
+}
+
+h4 {
+  font-size: 30px;
+  margin-bottom: 20px;
+  font-family: "Montserrat", sans-serif;
+}
+
+div.city {
+  font-size: 35px;
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+  font-weight: 300;
+}
+
+div.date {
+  font-family: "Montserrat", sans-serif;
+  font-size: 22px !important;
+  font-weight: 300;
+  text-align: center;
+}
+
+div.current-temp {
+  display: inline-block;
+  font-size: 60px;
+  margin-left: -1px;
+  font-weight: 400;
+  line-height: 72px;
+  font-family: "Be Vietnam Pro", sans-serif;
+}
+
+img.weather-icon {
+  vertical-align: top;
+  height: 76px;
+  width: 80px;
+  margin-right: 1px;
+}
+
+div.clearfix {
+  text-align: center;
+  padding: 28px 0 5px 0 !important;
+}
+
+div.description {
+  font-size: 18px;
+  font-weight: 600;
+  font-family: "Montserrat", sans-serif;
+  text-transform: capitalize;
+  text-align: center;
+}
+
+div.wind-humidity {
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+  font-size: 15px;
+}
