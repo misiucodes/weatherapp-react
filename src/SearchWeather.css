@@ -17,13 +17,22 @@ h2 {
 }
 .form-control {
   display: block;
+  width: 100%;
   background-color: #fff;
+  color: #212529;
   border: 1px solid #ced4da;
-  min-height: 1;
-  padding: 0;
+  background-clip: padding-box;
   font-size: 1rem;
   border-radius: 0.3rem;
   line-height: 1.5;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.form-control-lg {
+  min-height: calc(1.5em + 1rem + 2px);
+  padding: 0.5rem 1rem;
+  font-size: 0.25rem;
+  border-radius: 0.3rem;
 }
 
 input[type="search" i] {
@@ -31,7 +40,9 @@ input[type="search" i] {
   border-radius: 8px;
   text-indent: 40px;
   border: none;
-  margin-bottom: 12px;
+  line-height: -27px;
+  font-size: 15px;
+  margin: -11px;
 }
 
 input::placeholder {
@@ -42,8 +53,8 @@ input::placeholder {
 
 .icon-search {
   font-size: 24px;
-  top: 25px;
-  right: -17px;
+  top: 11px;
+  right: -6px;
   position: relative;
   float: left;
   color: darkslategrey;
