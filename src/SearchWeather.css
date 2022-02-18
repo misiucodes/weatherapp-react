@@ -6,10 +6,10 @@ h2 {
   font-size: 2.4vw;
 }
 
-small {
+small.github {
   font-size: 11px;
   display: block;
-  margin-top: 12px;
+  margin-top: 16px;
   text-align: center;
   font-family: "Montserrat", sans-serif;
   letter-spacing: 1px;
