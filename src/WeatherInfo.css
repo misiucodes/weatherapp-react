@@ -28,7 +28,7 @@ div.date {
 div.current-temp {
   display: inline-block;
   font-size: 60px;
-  margin-left: -1px;
+  margin-left: 9px;
   font-weight: 400;
   line-height: 72px;
   font-family: "Be Vietnam Pro", sans-serif;

@@ -3,6 +3,7 @@ import axios from "axios";
 import WeatherInfo from "./WeatherInfo";
 import "./SearchWeather.css";
 
+
 export default function SearchWeather(props) {
     const [weatherData, setWeatherData] = useState({ ready: false });
     const [city, setCity] = useState(props.defaultCity);
@@ -55,7 +56,7 @@ export default function SearchWeather(props) {
                     <div className="line-break"></div>
                 </div>
                 <WeatherInfo data={weatherData} />
-                <small className="github">♡ Follow my journey on <a href="https://github.com/misiucodes/weatherapp-react" target="_blank">Github</a></small>
+                <small className="github">This was coded by <a href="https://www.linkedin.com/in/michellehtran/">Michelle Tran</a> and is open-source on <a href="https://github.com/misiucodes/weatherapp-react" target="_blank">Github <strong>♡</strong></a></small>
             </div>
         );
      } else {
