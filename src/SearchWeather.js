@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import axios from "axios";
 import WeatherInfo from "./WeatherInfo";
-import ForecastPreview from "./ForecastPreview";
 import "./SearchWeather.css";
 
 export default function SearchWeather(props) {
@@ -19,7 +18,7 @@ export default function SearchWeather(props) {
         description: response.data.weather[0].description,
         city: response.data.name,
         date: new Date(response.data.dt * 1000),
-        });
+      });
     }
 
     function handleSubmit(event) {
@@ -39,9 +38,9 @@ export default function SearchWeather(props) {
 
     let form = (
         <div className="col-sm-12 col-md-12 col-lg-12">
-            <form onSubmit={handleSubmit} className="form-control form-control-lg opacity-50">
+            <form onSubmit={handleSubmit}>
                <i className="fas fa-search icon-search"></i>
-               <input type="search" placeholder="Enter a city..." onChange={handleCityChange} />
+               <input type="search" className="form-control opacity-50" placeholder="Enter a city..." onChange={handleCityChange} autoFocus={false} autoComplete="false"/>
             </form>
         </div>
     );
@@ -53,10 +52,10 @@ export default function SearchWeather(props) {
                 <div className="search-container">
                     <h2>The only weather forecast you need</h2>
                     {form}
-                    <hr />
+                    <div className="line-break"></div>
                 </div>
                 <WeatherInfo data={weatherData} />
-                <ForecastPreview data={weatherData.coordinate} />
+                <small className="github">♡ Follow my journey on <a href="https://github.com/misiucodes/weatherapp-react" target="_blank">Github</a></small>
             </div>
         );
      } else {

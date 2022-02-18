@@ -11,8 +11,8 @@ export default function WeatherInfo(props) {
                     <div className="city">{props.data.city}</div>
                     <div className="date"><FormattedDate date={props.data.date}/></div>
                     <div className="clearfix">
-                            <img src="https://openweathermap.org/img/wn/01d@2x.png" alt="weather-icon" className="weather-icon" />
-                            <div className="current-temp">{Math.round(props.data.temperature)}°</div>
+                            <img src="https://openweathermap.org/img/wn/10d@2x.png" alt="weather-icon" className="weather-icon" /> 
+                            <div className="current-temp">{Math.round(props.data.temperature)}</div><span className="degree">°</span>
                     </div>
                     <div className="description">{props.data.description}</div>
                     <div className="wind-humidity">

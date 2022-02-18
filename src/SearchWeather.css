@@ -10,52 +10,63 @@ header {
 
 h2 {
   color: white;
-  margin: 144px auto 40px auto;
+  margin: 89px auto 24px auto;
   text-align: center;
   font-family: "Montserrat", sans-serif;
   font-size: 2.4vw;
 }
-.form-control {
+
+small {
+  font-size: 11px;
   display: block;
-  width: 100%;
-  background-color: #fff;
-  color: #212529;
-  border: 1px solid #ced4da;
-  background-clip: padding-box;
-  font-size: 1rem;
-  border-radius: 0.3rem;
+  margin-top: 12px;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  letter-spacing: 1px;
+}
+
+div.line-break {
+  position: relative;
+  background: white;
+  width: 210px;
+  border-radius: 22px;
+  height: 5px;
+  margin: 25px auto;
+  opacity: 80%;
+  top: 6px;
+}
+
+a {
+  text-decoration: none;
+  color: pink;
+}
+
+.form-control {
+  padding: 1rem 1rem;
+  font-weight: 400;
   line-height: 1.5;
-  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
-}
-
-.form-control-lg {
-  min-height: calc(1.5em + 1rem + 2px);
-  padding: 0.5rem 1rem;
-  font-size: 0.25rem;
   border-radius: 0.3rem;
-}
-
-input[type="search" i] {
   width: 100%;
-  border-radius: 8px;
-  text-indent: 40px;
-  border: none;
-  line-height: -27px;
-  font-size: 15px;
-  margin: -11px;
 }
 
 input::placeholder {
-  font-size: 22px;
+  font-size: 20px;
   font-family: "Montserrat", sans-serif;
-  padding: 10px;
+  text-indent: 33px;
+}
+
+input[type="search" i] {
+  border-color: transparent;
+  text-indent: 33px;
+  font-size: 20px;
+  color: black;
 }
 
 .icon-search {
   font-size: 24px;
-  top: 11px;
-  right: -6px;
+  top: 45px;
+  right: -19px;
   position: relative;
   float: left;
-  color: darkslategrey;
+  color: black;
 }
