@@ -3,7 +3,6 @@ import axios from "axios";
 import WeatherInfo from "./WeatherInfo";
 import "./SearchWeather.css";
 
-
 export default function SearchWeather(props) {
     const [weatherData, setWeatherData] = useState({ ready: false });
     const [city, setCity] = useState(props.defaultCity);
@@ -48,15 +47,14 @@ export default function SearchWeather(props) {
     
     if (weatherData.ready) { 
         return (
-            <div className="container">
-              <header>forecast</header>
+          <div className="container">
                 <div className="search-container">
                     <h2>The only weather forecast you need</h2>
                     {form}
                     <div className="line-break"></div>
                 </div>
                 <WeatherInfo data={weatherData} />
-                <small className="github">This was coded by <a href="https://www.linkedin.com/in/michellehtran/">Michelle Tran</a> and is open-source on <a href="https://github.com/misiucodes/weatherapp-react" target="_blank">Github <strong>♡</strong></a></small>
+                <small className="github">This was coded by <a href="https://www.linkedin.com/in/michellehtran/" target="_blank" rel="noreferrer">Michelle Tran</a> and is open-source on <a href="https://github.com/misiucodes/weatherapp-react" target="_blank" rel="noreferrer">Github <strong>♡</strong></a></small>
             </div>
         );
      } else {

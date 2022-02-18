@@ -6,13 +6,13 @@
 }
 
 h4 {
-  font-size: 30px;
+  font-size: 2vw;
   margin-bottom: 20px;
   font-family: "Montserrat", sans-serif;
 }
 
 div.city {
-  font-size: 35px;
+  font-size: 2vw;
   font-family: "Montserrat", sans-serif;
   text-align: center;
   font-weight: 300;
@@ -20,14 +20,14 @@ div.city {
 
 div.date {
   font-family: "Montserrat", sans-serif;
-  font-size: 20px !important;
+  font-size: 1.5vw;
   font-weight: 300;
   text-align: center;
 }
 
 div.current-temp {
   display: inline-block;
-  font-size: 60px;
+  font-size: 3.5vw;
   margin-left: 9px;
   font-weight: 400;
   line-height: 72px;
@@ -47,7 +47,7 @@ div.clearfix {
 }
 
 div.description {
-  font-size: 15px;
+  font-size: 1vw;
   font-weight: 600;
   font-family: "Montserrat", sans-serif;
   text-transform: capitalize;
@@ -58,7 +58,7 @@ div.description {
 div.wind-humidity {
   font-family: "Montserrat", sans-serif;
   text-align: center;
-  font-size: 15px;
+  font-size: 1vw;
   letter-spacing: 1px;
 }
 
