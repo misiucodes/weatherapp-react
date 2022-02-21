@@ -2,10 +2,10 @@
   background-color: rgba(255, 255, 255, 0.4);
   padding: 20px;
   border-radius: 8px;
-  height: 450px;
+  height: 700px;
 }
 
-canvas {
+canvas.weather-icon {
   top: 4px;
   position: relative;
   display: inline-block;

@@ -3,6 +3,8 @@ import FormattedDate from "./FormattedDate";
 import "./WeatherInfo.css";
 import WeatherIcon from "./WeatherIcon";
 import WeatherUnit from "./WeatherUnit";
+import DailyForecast from "./DailyForecast";
+
 
 
 export default function WeatherInfo(props) {
@@ -14,7 +16,7 @@ export default function WeatherInfo(props) {
                     <div className="city">{props.data.city}</div>
                     <div className="date"><FormattedDate date={props.data.date}/></div>
                     <div className="clearfix">
-                            <WeatherIcon code={props.data.icon} color="white" className="weather-icon" />
+                            <img src="http://openweathermap.org/img/w/{props.data.icon}.png" className="weather-icon" />
                             <WeatherUnit celcius={props.data.temperature} />
                             
                     </div>
@@ -23,6 +25,7 @@ export default function WeatherInfo(props) {
                         <span><strong>Humidity:</strong> {props.data.humidity}%</span> |
                         <span> <strong>Windspeed:</strong> {Math.round(props.data.wind)} km/h</span>
                     </div>
+                     <DailyForecast />
                 </div>
             </div>
         </div>

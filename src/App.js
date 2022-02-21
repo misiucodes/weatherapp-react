@@ -1,5 +1,6 @@
 import SearchWeather from "./SearchWeather";
 import './App.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 //add open source from github tag
 

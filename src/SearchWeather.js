@@ -12,7 +12,7 @@ export default function SearchWeather(props) {
         ready: true,
         coordinates: response.data.coord,
         temperature: response.data.main.temp,
-        icon: response.data.weather[0].icon,
+        icon: `http://openweathermap.org/img/w/${response.data.weather[0].icon}.png`,
         humidity: response.data.main.humidity,
         wind: response.data.wind.speed,
         description: response.data.weather[0].description,

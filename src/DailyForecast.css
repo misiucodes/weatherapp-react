@@ -1,0 +1,42 @@
+canvas {
+  margin: 10px auto;
+  display: block;
+}
+
+h3 {
+  margin-top: 0;
+  margin-bottom: 3rem;
+  font-weight: 500;
+  line-height: 1.2;
+  font-size: 1.5rem;
+  margin-left: -20px;
+}
+
+.daily-forecast-container {
+  margin: 65px auto;
+  display: block;
+  padding-left: 20px;
+  justify-content: center;
+  padding: 15px auto;
+}
+
+.daily-forecast-weekday {
+  text-align: center;
+  font-size: 15px !important;
+  margin: 10px auto 5px auto;
+  font-family: "Montserrat", sans-serif;
+  font-weight: light;
+}
+
+.daily-temps {
+  text-align: center;
+}
+
+.daily-forecast-description {
+  text-align: center;
+}
+
+.row {
+  --bs-gutter-x: 0;
+  margin-top: 20px;
+}
