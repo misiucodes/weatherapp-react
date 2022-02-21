@@ -3,7 +3,7 @@ h2 {
   margin: 89px auto 24px auto;
   text-align: center;
   font-family: "Montserrat", sans-serif;
-  font-size: 2.4vw;
+  font-size: 2.2vw;
 }
 
 small.github {
@@ -40,7 +40,7 @@ a {
 }
 
 input::placeholder {
-  font-size: 1.5vw;
+  font-size: 1.2vw;
   font-family: "Montserrat", sans-serif;
   text-indent: 33px;
 }

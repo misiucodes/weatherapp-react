@@ -62,5 +62,4 @@ export default function SearchWeather(props) {
          return form;
      }
     }
-
    
