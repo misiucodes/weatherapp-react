@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import axios from "axios";
 import WeatherInfo from "./WeatherInfo";
+import DailyForecast from "./DailyForecast";
 import "./SearchWeather.css";
 
 export default function SearchWeather(props) {
@@ -12,7 +13,7 @@ export default function SearchWeather(props) {
         ready: true,
         coordinates: response.data.coord,
         temperature: response.data.main.temp,
-        icon: `http://openweathermap.org/img/w/${response.data.weather[0].icon}.png`,
+        icon: `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`,
         humidity: response.data.main.humidity,
         wind: response.data.wind.speed,
         description: response.data.weather[0].description,
@@ -34,6 +35,7 @@ export default function SearchWeather(props) {
         let apiKey = "ef1f6e14d39c4aa8875abd79b5398d89";
         let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
         axios.get(apiUrl).then(handleResponse);
+        
     }
 
     let form = (
@@ -54,6 +56,7 @@ export default function SearchWeather(props) {
                     <div className="line-break"></div>
                 </div>
                 <WeatherInfo data={weatherData} />
+                
                 <small className="github">This was coded by <a href="https://www.linkedin.com/in/michellehtran/" target="_blank" rel="noreferrer">Michelle Tran</a> and is open-source on <a href="https://github.com/misiucodes/weatherapp-react" target="_blank" rel="noreferrer">Github <strong>♡</strong></a></small>
             </div>
         );

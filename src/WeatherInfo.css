@@ -2,19 +2,23 @@
   background-color: rgba(255, 255, 255, 0.4);
   padding: 20px;
   border-radius: 8px;
-  height: 700px;
+  height: 650px;
 }
 
-canvas.weather-icon {
-  top: 4px;
+img.weather-icon {
+  top: -2px;
   position: relative;
   display: inline-block;
-  width: 46px;
+  vertical-align: top;
+  height: 76px;
+  width: 80px;
+  margin-right: -10px;
 }
 
 h4 {
   font-size: 1.5vw;
   margin-bottom: 20px;
+  margin-top: -6px !important;
   font-family: "Montserrat", sans-serif;
 }
 
@@ -41,20 +45,13 @@ div.current-temp {
   font-family: "Be Vietnam Pro", sans-serif;
 }
 
-img.weather-icon {
-  vertical-align: top;
-  height: 76px;
-  width: 80px;
-  margin-right: 1px;
-}
-
 div.clearfix {
   text-align: center;
   padding: 28px 0 5px 0 !important;
 }
 
 div.description {
-  font-size: 0.9vw;
+  font-size: 12px !important;
   font-weight: 600;
   font-family: "Montserrat", sans-serif;
   text-transform: capitalize;

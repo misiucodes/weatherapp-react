@@ -1,7 +1,6 @@
 import React from "react";
 import FormattedDate from "./FormattedDate";
 import "./WeatherInfo.css";
-import WeatherIcon from "./WeatherIcon";
 import WeatherUnit from "./WeatherUnit";
 import DailyForecast from "./DailyForecast";
 
@@ -16,7 +15,7 @@ export default function WeatherInfo(props) {
                     <div className="city">{props.data.city}</div>
                     <div className="date"><FormattedDate date={props.data.date}/></div>
                     <div className="clearfix">
-                            <img src="http://openweathermap.org/img/w/{props.data.icon}.png" className="weather-icon" />
+                            <img src={props.data.icon} alt={props.data.description} className="weather-icon"/>
                             <WeatherUnit celcius={props.data.temperature} />
                             
                     </div>

@@ -4,17 +4,16 @@ canvas {
 }
 
 h3 {
-  margin-top: 0;
-  margin-bottom: 3rem;
-  font-weight: 500;
-  line-height: 1.2;
-  font-size: 1.5rem;
-  margin-left: -20px;
+  font-size: 1.3rem !important;
+  margin-bottom: 20px !important;
+  margin-left: -14px;
+  font-family: "Montserrat", sans-serif;
+  line-height: 3.2;
 }
 
 .daily-forecast-container {
-  margin: 65px auto;
   display: block;
+  margin-top: 77px !important;
   padding-left: 20px;
   justify-content: center;
   padding: 15px auto;
@@ -34,6 +33,7 @@ h3 {
 
 .daily-forecast-description {
   text-align: center;
+  font-size: 10px;
 }
 
 .row {

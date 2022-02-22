@@ -27,8 +27,8 @@ div.line-break {
 }
 
 a {
-  text-decoration: none;
-  color: pink;
+  text-decoration: none !important;
+  color: hotpink !important;
 }
 
 .form-control {
@@ -47,7 +47,7 @@ input::placeholder {
 
 input[type="search" i] {
   border-color: transparent;
-  text-indent: 35=7px;
+  text-indent: 37px;
   font-size: 20px;
   color: black;
 }
