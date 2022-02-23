@@ -28,7 +28,7 @@ div.line-break {
 
 a {
   text-decoration: none !important;
-  color: hotpink !important;
+  color: orange !important;
 }
 
 .form-control {
@@ -54,7 +54,7 @@ input[type="search" i] {
 
 .icon-search {
   font-size: 24px;
-  top: 37px;
+  top: 35px;
   right: -19px;
   position: relative;
   float: left;
