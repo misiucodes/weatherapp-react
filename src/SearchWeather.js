@@ -1,8 +1,7 @@
 import React, { useState } from "react";
-import axios from "axios";
 import WeatherInfo from "./WeatherInfo";
+import axios from "axios";
 import "./SearchWeather.css";
-import DailyForecast from "./DailyForecast";
 
 export default function SearchWeather(props) {
     const [weatherData, setWeatherData] = useState({ ready: false });
@@ -13,12 +12,12 @@ export default function SearchWeather(props) {
         ready: true,
         coordinates: response.data.coord,
         temperature: response.data.main.temp,
+        date: new Date(response.data.dt * 1000),
+        description: response.data.weather[0].description,
         icon: `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`,
         humidity: response.data.main.humidity,
         wind: response.data.wind.speed,
-        description: response.data.weather[0].description,
         city: response.data.name,
-        date: new Date(response.data.dt * 1000),
       });
     }
 
@@ -41,7 +40,13 @@ export default function SearchWeather(props) {
         <div className="col-sm-12 col-md-12 col-lg-12">
             <form onSubmit={handleSubmit}>
                <i className="fas fa-search icon-search"></i>
-               <input type="search" className="form-control opacity-50" placeholder="Enter a city..." onChange={handleCityChange} autoFocus={false} autoComplete="false"/>
+               <input 
+                type="search" 
+                className="form-control opacity-50" 
+                placeholder="Enter a city..." 
+                onChange={handleCityChange} 
+                autoFocus={false} 
+                autoComplete="false"/>
             </form>
         </div>
     );
@@ -55,7 +60,6 @@ export default function SearchWeather(props) {
                     <div className="line-break"></div>
                 </div>
                 <WeatherInfo data={weatherData} />
-                <DailyForecast coordinate={weatherData.coordinates} />
                 <small className="github">This was coded by <a href="https://www.linkedin.com/in/michellehtran/" target="_blank" rel="noreferrer">Michelle Tran</a> and is open-source on <a href="https://github.com/misiucodes/weatherapp-react" target="_blank" rel="noreferrer">Github <strong>♡</strong></a></small>
             </div>
         );
