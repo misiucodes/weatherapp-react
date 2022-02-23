@@ -25,6 +25,7 @@ export default function WeatherInfo(props) {
                         <span><strong>Humidity:</strong> {props.data.humidity}%</span> |
                         <span> <strong>Windspeed:</strong> {Math.round(props.data.wind)} km/h</span>
                     </div>
+                    <h5>Weekly Forecast</h5>
                     <WeatherForecast coordinates={props.data.coordinates} />
                 </div>
             </div>

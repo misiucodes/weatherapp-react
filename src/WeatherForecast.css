@@ -3,12 +3,8 @@ canvas {
   display: block;
 }
 
-h3 {
-  font-size: 1.3rem !important;
-  margin-bottom: 20px !important;
-  margin-left: -14px;
-  font-family: "Montserrat", sans-serif;
-  line-height: 3.2;
+.weather-forecast-container {
+  padding-top: 40px;
 }
 
 .daily-forecast-container {
@@ -37,6 +33,6 @@ h3 {
 }
 
 .row {
-  --bs-gutter-x: 0;
+  --bs-gutter-x: -0.5rem;
   margin-top: 20px;
 }

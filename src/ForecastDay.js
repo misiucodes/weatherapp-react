@@ -24,7 +24,6 @@ export default function ForecastDay(props) {
 
   return (
     <div className="forecast-day-container">
-      <h3>Weekly Forecast</h3>
         <div className="row">
           <div className="col">
             <div className="daily-forecast-weekday"><strong>{day()}</strong></div>
