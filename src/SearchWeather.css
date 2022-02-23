@@ -40,7 +40,7 @@ a {
 }
 
 input::placeholder {
-  font-size: 1.2vw;
+  font-size: 1.2rem;
   font-family: "Montserrat", sans-serif;
   text-indent: 37px;
 }
